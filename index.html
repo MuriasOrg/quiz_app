@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.23">
+<title>KaW Docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article toc2 toc-left text-justify">
+<div id="header">
+<h1><span class="image"><img src="./images/KaW.png" alt="GameIcon"></span> KaW Docs</h1>
+<div class="details">
+<span id="revnumber">version 8.2 EN,</span>
+<span id="revdate">January 2023</span>
+<br><span id="revremark">(based upon AsciiDoc version)</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#section-introduction-and-goals">1. Introduction and Goals</a>
+<ul class="sectlevel2">
+<li><a href="#_requirements_overview">1.1. Requirements Overview</a></li>
+<li><a href="#_quality_goals">1.2. Quality Goals</a></li>
+<li><a href="#_stakeholders">1.3. Stakeholders</a></li>
+</ul>
+</li>
+<li><a href="#section-architecture-constraints">2. Architecture Constraints</a>
+<ul class="sectlevel2">
+<li><a href="#_technical_constraints">2.1. Technical constraints</a></li>
+<li><a href="#_organizational_constraints">2.2. Organizational constraints</a></li>
+<li><a href="#_conventions">2.3. Conventions</a></li>
+</ul>
+</li>
+<li><a href="#section-system-scope-and-context">3. System Scope and Context</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction">3.1. Introduction</a></li>
+<li><a href="#_business_context">3.2. Business Context</a></li>
+<li><a href="#_technical_context">3.3. Technical Context</a></li>
+</ul>
+</li>
+<li><a href="#section-solution-strategy">4. Solution Strategy</a>
+<ul class="sectlevel2">
+<li><a href="#_technologies">4.1. Technologies</a></li>
+<li><a href="#_decomposition_of_the_system">4.2. Decomposition of the System</a></li>
+<li><a href="#_decisions_to_achieve_quality_goals">4.3. Decisions to Achieve Quality Goals</a></li>
+<li><a href="#_organization_and_management">4.4. Organization and management</a></li>
+</ul>
+</li>
+<li><a href="#section-building-block-view">5. Building Block View</a>
+<ul class="sectlevel2">
+<li><a href="#_scope_and_context">5.1. Scope and Context</a></li>
+<li><a href="#_level_1">5.2. Level 1</a></li>
+<li><a href="#_level_2">5.3. Level 2</a></li>
+</ul>
+</li>
+<li><a href="#section-runtime-view">6. Runtime View</a>
+<ul class="sectlevel2">
+<li><a href="#_login_scenario">6.1. Login scenario</a></li>
+<li><a href="#_question_generation">6.2. Question Generation</a></li>
+<li><a href="#_user_statistics_recording_scenario">6.3. User statistics recording scenario</a></li>
+</ul>
+</li>
+<li><a href="#section-deployment-view">7. Deployment View</a>
+<ul class="sectlevel2">
+<li><a href="#_infrastructure_level_1">7.1. Infrastructure Level 1</a></li>
+</ul>
+</li>
+<li><a href="#section-concepts">8. Cross-cutting Concepts</a>
+<ul class="sectlevel2">
+<li><a href="#_user_experience_ux">8.1. User Experience (UX)</a></li>
+<li><a href="#_security">8.2. Security</a></li>
+<li><a href="#_development_concepts">8.3. Development concepts</a></li>
+<li><a href="#_architecture_and_design_patterns">8.4. Architecture and design patterns</a></li>
+<li><a href="#_under_the_hood_concepts">8.5. "Under-the-hood" concepts</a></li>
+<li><a href="#_operation_concepts">8.6. Operation concepts</a></li>
+</ul>
+</li>
+<li><a href="#section-design-decisions">9. Architecture Decisions</a>
+<ul class="sectlevel2">
+<li><a href="#_using_microservices_and_gateway">9.1. Using microservices and gateway</a></li>
+<li><a href="#_creating_a_restful_api">9.2. Creating a RESTful API</a></li>
+<li><a href="#_using_nosql">9.3. Using NoSQL</a></li>
+<li><a href="#_user_authentication">9.4. User authentication</a></li>
+</ul>
+</li>
+<li><a href="#section-quality-scenarios">10. Quality Requirements</a>
+<ul class="sectlevel2">
+<li><a href="#_quality_tree">10.1. Quality Tree</a></li>
+<li><a href="#_quality_scenarios">10.2. Quality Scenarios</a></li>
+</ul>
+</li>
+<li><a href="#section-technical-risks">11. Risks and Technical Debts</a>
+<ul class="sectlevel2">
+<li><a href="#_technical_risks">11.1. Technical risks</a></li>
+<li><a href="#_business_risks">11.2. Business risks</a></li>
+<li><a href="#_technical_debts">11.3. Technical debts</a></li>
+</ul>
+</li>
+<li><a href="#section-glossary">12. Glossary</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0; padding: 2px 0 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:none;}
+}
+</style>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-introduction-and-goals">1. Introduction and Goals</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<p>Describes the relevant requirements and the driving forces that software architects and development team must consider.
+These include</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>underlying business goals,</p>
+</li>
+<li>
+<p>essential features,</p>
+</li>
+<li>
+<p>essential functional requirements,</p>
+</li>
+<li>
+<p>quality goals for the architecture and</p>
+</li>
+<li>
+<p>relevant stakeholders and their expectations</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>RTVE wants to offer a web application based on the famous Spanish TV show
+<a href="https://es.wikipedia.org/wiki/Saber_y_ganar">"Saber y Ganar"</a>
+to its users in commemoration of the 28th anniversary of the show. This show consists on
+answering a number of questions with different types and subjects obtaining a prize for
+each question well answered.</p>
+</div>
+<div class="paragraph">
+<p>The expected goal is to offer a well-designed game that maintains all the quality standards
+that the company offers like maintainability, security, etc&#8230;&#8203;; while trying to fulfill the
+user&#8217;s needs to provide a positive UX.</p>
+</div>
+<div class="sect2">
+<h3 id="_requirements_overview">1.1. Requirements Overview</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>Short description of the functional requirements, driving forces, extract (or abstract)
+of requirements. Link to (hopefully existing) requirements documents
+(with version number and information where to find it).</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>From the point of view of the end users a system is created or modified to
+improve support of a business activity and/or improve the quality.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Short textual description, probably in tabular use-case format.
+If requirements documents exist this overview should refer to these documents.</p>
+</div>
+<div class="paragraph">
+<p>Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.</p>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-1/">Introduction and Goals</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The web application must meet the following requirements:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Requirement</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User Registration and Login</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Users must be able to register into game or login into the game.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WikiData</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The questions and answer options (a correct one and three distractors) must be generated using the WikiData API.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All the questions must have a time to answer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">APIs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The game must expose two APIs that retrieves information about 1. Users and 2. Questions generated.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User History</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maintain a record of users' participation in the game, including the number of games played, questions passed and failed, and times played.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_quality_goals">1.2. Quality Goals</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders.
+We really mean quality goals for the architecture. Don&#8217;t confuse them with project goals.
+They are not necessarily identical.</p>
+</div>
+<div class="paragraph">
+<p>Consider this overview of potential topics (based upon the ISO 25010 standard):</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/01_2_iso-25010-topics-EN.drawio.png" alt="Categories of Quality Requirements">
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions.
+Make sure to be very concrete about these qualities, avoid buzzwords.
+If you as an architect do not know how the quality of your work will be judged&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>A table with quality goals and concrete scenarios, ordered by priorities</p>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Priority</th>
+<th class="tableblock halign-left valign-top">Quality Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Considerations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Usability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As with any application, response time, learning curve, and navigability of the application should meet standards and expected minimums. The system should be easy to use and not require specific or complex knowledge.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consider incorporating user feedback and usability testing to refine the user interface.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accessibility</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Any user must be able to enjoy playing with our application despite any disability they could have.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HTML standards must be followed to try to minimize the lack of Accessibility of our Application. Another important feature is the contrast of our web. All of these can be tested with Accessibility tools available on Internet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Performance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The software should have acceptable response time to provide a smooth user experience.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basic optimization techniques can improve performance.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The application should stick to industry best practices for security to protect against unauthorized access, data breaches, and other threats.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regular security audits and implementing basic security controls are essential.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Availability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimizing downtime and making interruptions imperceptible to users is desirable, however, it is difficult to achieve and not a strict requirement. For a game application, continuous availability is not crucial.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Implementing redundancy and failover mechanisms can enhance availability.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_stakeholders">1.3. Stakeholders</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>should know the architecture</p>
+</li>
+<li>
+<p>have to be convinced of the architecture</p>
+</li>
+<li>
+<p>have to work with the architecture or with code</p>
+</li>
+<li>
+<p>need the documentation of the architecture for their work</p>
+</li>
+<li>
+<p>have to come up with decisions about the system or its development</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>You should know all parties involved in development of the system or affected by the system.
+Otherwise, you may get nasty surprises later in the development process.
+These stakeholders determine the extent and the level of detail of your work and its results.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Table with role names, person names, and their expectations with respect to the architecture and its documentation.</p>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Role/Name</th>
+<th class="tableblock halign-left valign-top">Contact</th>
+<th class="tableblock halign-left valign-top">Expectations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RTVE</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="mailto:rtve.dircom@rtve.es">rtve.dircom@rtve.es</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A web application that emulates the functionality of the famous Spanish TV show "Saber y Ganar".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HappySw</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="mailto:contact_projects@happysw.es">contact_projects@happysw.es</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An application that meets all the  requirements asked by RTVE maintaining the quality that offers the company.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Professors</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Pablo González: <a href="mailto:gonzalezgpablo@uniovi.es">gonzalezgpablo@uniovi.es</a></p>
+</li>
+<li>
+<p>Jose Labra: <a href="mailto:labra@uniovi.es">labra@uniovi.es</a></p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A well-designed web application that fulfills the functional requirements for the game to work, as well as, the quality requirements.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Users</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A quiz game to test their knowledge on different fields. The game must be easy to use and must record all of their past games.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Development team</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Carlos Menéndez González (<a href="mailto:UO288056@uniovi.es">UO288056@uniovi.es</a>)</p>
+</li>
+<li>
+<p>Didier Yamil Reyes Castro (<a href="mailto:UO287866@uniovi.es">UO287866@uniovi.es</a>)</p>
+</li>
+<li>
+<p>Iyán Robles Suárez (<a href="mailto:UO288780@uniovi.es">UO288780@uniovi.es</a>)</p>
+</li>
+<li>
+<p>Raúl Mera Soto (<a href="mailto:UO287827@uniovi.es">UO287827@uniovi.es</a>)</p>
+</li>
+<li>
+<p>Mateo Rico Iglesias (<a href="mailto:UO277172@uniovi.es">UO277172@uniovi.es</a>)</p>
+</li>
+<li>
+<p>Anna Kutova (<a href="mailto:UO305098@uniovi.es">UO305098@uniovi.es</a>)</p>
+</li>
+<li>
+<p>Diego Murias Suárez (<a href="mailto:UO290009@uniovi.es">UO290009@uniovi.es</a>)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A good documented and clean code that fulfills the expected requirements. Also, a well implemented System that makes it easier for maintenance and extension.</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-architecture-constraints">2. Architecture Constraints</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>Any requirement that constraints software architects in their freedom of design and implementation decisions or decision about the development process. These constraints sometimes go beyond individual systems and are valid for whole organizations and companies.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.
+Constraints must always be dealt with; they may be negotiable, though.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Simple tables of constraints with explanations.
+If needed you can subdivide them into
+technical constraints, organizational and political constraints and
+conventions (e.g. programming or versioning guidelines, documentation or naming conventions)</p>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-2/">Architecture Constraints</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The development of the application has several architectural constraints that must be addressed.</p>
+</div>
+<div class="sect2">
+<h3 id="_technical_constraints">2.1. Technical constraints</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Constraint</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Web front-end</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The application must be accessible through a web interface to interact with the game.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data storage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The application must be able to store historical data from users (number of games, questions, etc.) and allow them to register.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wikidata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wikidata will be used to generate the questions, so the application must implement mechanisms to fetch information from it.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deployment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The application will be deployable on a Linux server.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_organizational_constraints">2.2. Organizational constraints</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Constraint</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Team members</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The team is composed of 7 members from the same lab group.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The application is developed in a limited time (the semester).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meetings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">At least one meeting per week will have place in order to discuss what needs to be done next.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Git</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The development team must use git for version control management.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_conventions">2.3. Conventions</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Constraint</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All the project must be developed in English.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARC42</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The documentation of the project must use the ARC42 template.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitHub conventions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes in the project must be carried out by using different branches. Issues are used as official communication means.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenAPI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The APIs documentation will follow <a href="https://www.openapis.org/">OpenAPI specification</a> to have an standardized way of documenting and make it easier for the users consulting it.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JSend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All services must follow the <a href="https://github.com/omniti-labs/jsend">JSend</a> specification for each JSON response.</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-system-scope-and-context">3. System Scope and Context</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>System scope and context - as the name suggests - delimits your system (i.e. your scope) from all its communication partners
+(neighboring systems and users, i.e. the context of your system). It thereby specifies the external interfaces.</p>
+</div>
+<div class="paragraph">
+<p>If necessary, differentiate the business context (domain specific inputs and outputs) from the technical context (channels, protocols, hardware).</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>The domain interfaces and technical interfaces to communication partners are among your system&#8217;s most critical aspects. Make sure that you completely understand them.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Various options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Context diagrams</p>
+</li>
+<li>
+<p>Lists of communication partners and their interfaces.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-3/">Context and Scope</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_introduction">3.1. Introduction</h3>
+<div class="paragraph">
+<p>The KaW project aims to develop a new experimental version of the "Saber y Ganar" quiz show for RTVE
+that involves creating a web application where users can register, log in, and participate in quiz
+games. Questions for the quiz will be automatically generated from data available in Wikidata.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_business_context">3.2. Business Context</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>Specification of <strong>all</strong> communication partners (users, IT-systems, &#8230;&#8203;) with explanations of domain specific inputs and outputs or interfaces.
+Optionally you can add domain specific formats or communication protocols.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>All stakeholders should understand which data are exchanged with the environment of the system.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>All kinds of diagrams that show the system as a black box and specify the domain interfaces to communication partners.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively (or additionally) you can use a table.
+The title of the table is the name of your system, the three columns contain the name of the communication partner, the inputs, and the outputs.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/03_business_context.png" alt="Business Context">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Communication partner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inputs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Outputs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interacts with WebApp by putting user credentials and answering to questions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Receives question status (correct/incorrect) and history information about past games.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WebApp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User interaction by means of a graphical interface. This includes accepting the answers of questions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provides user information and question data including text, options and the correct answer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Question Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accepts queries for generating questions based on size, type and language.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generates the question data (text, options, images and correct answer).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wikidata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Receives queries from the Question Service in order to generate the data of the question.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Responds to the queries with all the data of the generated question.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_technical_context">3.3. Technical Context</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation which I/O uses which channel.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>E.g. UML deployment diagram describing channels to neighboring systems,
+together with a mapping table showing the relationships between channels and input/output.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/03_technical_context.png" alt="Technical Context">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Component</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WebApp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accessible via the internet, allowing users to interact with the KaW application.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide access to user information and generated questions, enabling integration with external systems. Also, provides an API interface for consulting certain information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stores and retrieves user data, including registration information and participation history. Also, questions can be stored for caching purposes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wikidata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accepts SPARQL queries and returns the requested data about questions.</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-solution-strategy">4. Solution Strategy</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. It includes</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>technology decisions</p>
+</li>
+<li>
+<p>decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern</p>
+</li>
+<li>
+<p>decisions on how to achieve key quality goals</p>
+</li>
+<li>
+<p>relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>These decisions form the cornerstones for your architecture. They are the foundation for many other detailed decisions or implementation rules.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Keep the explanations of such key decisions short.</p>
+</div>
+<div class="paragraph">
+<p>Motivate what was decided and why it was decided that way,
+based upon problem statement, quality goals and key constraints.
+Refer to details in the following sections.</p>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-4/">Solution Strategy</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_technologies">4.1. Technologies</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>React</strong> : React will simplify the task build reusable and modular UI elements for our application thanks to its component-based structure. It also allows us to use JSX, which is a syntax extension for JavaScript that allows us to write HTML elements inside our JavaScript code. This will make our code more readable and easier to debug.</p>
+</li>
+<li>
+<p><strong>Express</strong> : Web application framework for Node.js which will simplify development on the server side. There is also available a wide range of third-party middlewares that we could include on our application.</p>
+</li>
+<li>
+<p><strong>TypeScript</strong> : Since we will be using JavaScript and are more familiar with statically typed languages we will use TypeScript for the services of our application. This will also reduce the likelihood of some unexpected errors at runtime.</p>
+</li>
+<li>
+<p><strong>MongoDB</strong> : We chose MongoDB since we consider we could take advantage of it&#8217;s flexible schema. Its native support for JSON and its simple query language also influenced our decision. We also consider this a valuable opportunity to learn and work with a document database.</p>
+</li>
+<li>
+<p><strong>Docker</strong>: To deploy our project, Docker was chosen due to its handy portability and its perfect integration with microservices applications.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_decomposition_of_the_system">4.2. Decomposition of the System</h3>
+<div class="sect3">
+<h4 id="_architectural_patterns">4.2.1. Architectural patterns</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Microservices</strong>:
+As the main architecture for the whole project. The system is divided into several modules representing
+a functional requirement like question generation. Each of these modules will be independent from
+each other and have its own database.</p>
+</li>
+<li>
+<p><strong>RESTful APIs</strong>:
+The main architecture for our Services to function as an API. Clients can communicate through
+over HTTPS using standard methods, such as GET to consult information like history data or
+generate questions using Wikidata. All these services are "masked" through a middleware so
+clients do not have to access different endpoints.</p>
+</li>
+<li>
+<p><strong>Gateway</strong>
+A middleware that acts as an API-frontend for clients to access various services within our system.
+This component can be also seen as a "Controller" since it receives petitions from outside, calls the
+corresponding service that answers that petition and returns its value.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_decisions_to_achieve_quality_goals">4.3. Decisions to Achieve Quality Goals</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quality goal</th>
+<th class="tableblock halign-left valign-top">Scenario</th>
+<th class="tableblock halign-left valign-top">Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ensuring secure methods of authentication, such as login credentials (username and password), to protect user accounts from unauthorized access.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Implementation of secure authentication mechanisms with mechanisms such as JWT, encryption for data in transit using HTTPS, and security enforcement automation with tools such as SonarCloud.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Performance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Web-app should work smoothly and respond quickly.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Implementing caching mechanisms for Question generation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Usability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The application aims for user-friendly accessibility with an intuitive design.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Different web tools can be used to test accessibility and responsive design such as
+<a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es&amp;pli=1">Google LightHouse</a>, <a href="https://webaim.org/resources/contrastchecker/">Contrast Checker</a> or <a href="https://wave.webaim.org/">Wave</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_organization_and_management">4.4. Organization and management</h3>
+<div class="paragraph">
+<p>The team will follow an agile methodology to focus on continuous delivering of products with value to
+the stakeholders as well as improving the quality of the whole project in each delivery.</p>
+</div>
+<div class="paragraph">
+<p>Each week the team will have a meeting to discuss the work performed
+through the week, the tasks not done and all the decisions taken for next weeks, which will
+be recorded on the Wiki of the GitHub repository. All the work performed and its progress is going to be tracked by means of the Kanban and the issues.
+Any unforeseen issue that may arise during development will be discussed in the issue itself or via our WhatsApp group if of low relevance or importance.</p>
+</div>
+<div class="paragraph">
+<p>In the end, agile methodologies promotes the continuous collaboration of the team to ship quality products
+that stakeholders can really make value of, which is one of the objectives from the team.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-building-block-view">5. Building Block View</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Content</div>
+<p>The building block view shows the static decomposition of the system into building blocks (modules, components, subsystems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, &#8230;&#8203;) as well as their dependencies (relationships, associations, &#8230;&#8203;)</p>
+</div>
+<div class="paragraph">
+<p>This view is mandatory for every architecture documentation.
+In analogy to a house this is the <em>floor plan</em>.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Maintain an overview of your source code by making its structure understandable through
+abstraction.</p>
+</div>
+<div class="paragraph">
+<p>This allows you to communicate with your stakeholder on an abstract level without disclosing implementation details.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>The building block view is a hierarchical collection of black boxes and white boxes
+(see figure below) and their descriptions.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/05_building_blocks-EN.png" alt="Hierarchy of building blocks">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Level 1</strong> is the white box description of the overall system together with black
+box descriptions of all contained building blocks.</p>
+</div>
+<div class="paragraph">
+<p><strong>Level 2</strong> zooms into some building blocks of level 1.
+Thus it contains the white box description of selected building blocks of level 1, together with black box descriptions of their internal building blocks.</p>
+</div>
+<div class="paragraph">
+<p><strong>Level 3</strong> zooms into selected building blocks of level 2, and so on.</p>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-5/">Building Block View</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scope_and_context">5.1. Scope and Context</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-ed79cba539d8cad55211d0cbfddef30b.png" alt="Diagram" width="464" height="72">
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Motivation</dt>
+<dd>
+<p>The diagram above shows the high-level abstraction of the functionality
+of the system. As it can be seen, there are two main
+components: Users and Application; and one External service: Wikidata.
+The general workflow consists on a series of interactions done by the users through
+the different components exposed by the Application. During the game, the application
+will require the help of the external service to generate the different questions
+and answers that the user will have to choose. Also, users can communicate with
+our API to retrieve or generate information to be used in other applications.</p>
+</dd>
+<dt class="hdlist1">Contained Building Blocks</dt>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Building block</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KaW Application</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> The core block that manages the game itself, the visuals of it and the API interface.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WikiData</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API that offers the Application an easy-to-use interface to perform queries for the question and answer generation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_level_1">5.2. Level 1</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-5da3a1f1dc3835b4825542d08d343d98.png" alt="Diagram" width="784" height="214">
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Motivation</dt>
+<dd>
+<p>In this level of decomposition, we illustrate the primary services of our system. The Frontend
+service serves as the entry point for user interactions with the KaW game,
+directing them to the Gateway. The Gateway then routes these interactions to the appropriate
+microservices for processing. The users can also make direct requests to the Gateway to communicate
+with our API instead that playing the game. This diagram emphasizes the flow of interactions through the
+system&#8217;s components.</p>
+</dd>
+<dt class="hdlist1">Contained Building Blocks</dt>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Building block</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Frontend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service responsible for collecting user interactions and routing them to the Gateway.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gateway</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Middleware component that routes user interactions or API requests to the appropriate microservices.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microservices</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Collection of smaller services responsible for handling various functionalities of the application.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_level_2">5.3. Level 2</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-5cfe8256fe3a6490bbc9b7a480ee3d85.png" alt="Diagram" width="784" height="562">
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Motivation</dt>
+<dd>
+<p>This diagram shows a more detailed view of the functionality
+of the system, showing the gateway and the different microservices.
+The user interacts with the WebApp, which sends requests to the Gateway.
+The Gateway then communicates with the different microservices to perform various operations.
+The QuestionService also interacts with the Wikidata API to generate questions and answers.
+The results are then sent back to the user through the same path.
+This architecture allows for a separation of concerns, where each component has a specific role and responsibility.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>If users decide to use the API, they must always connect through our Gateway and never directly to
+the services itself. Having this in mind, users can make requests to generate questions (the same
+way as we use for our game) for its own purposes and also, consult a series of historical records
+of the game itself such as games played, questions failed, etc.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Contained Building Blocks</dt>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Building block</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WebApp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> Component that Users interact with. It represents all the visuals and interactivity of the Web Application.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gateway</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MiddleWare that connects the WebApplication with the different MicroServices of the Application and serves as an API entrance point.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AuthService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It manages all the actions referred to the authentication of a user into the system. Also, the different registration of them.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UserService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It manages all the actions referred to the users such as retrieval of game history.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QuestionService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handles the Question and Answers generation. This action is complemented with the use of Wikidata API.</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-runtime-view">6. Runtime View</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>The runtime view describes concrete behavior and interactions of the system’s building blocks in form of scenarios from the following areas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>important use cases or features: how do building blocks execute them?</p>
+</li>
+<li>
+<p>interactions at critical external interfaces: how do building blocks cooperate with users and neighboring systems?</p>
+</li>
+<li>
+<p>operation and administration: launch, start-up, stop</p>
+</li>
+<li>
+<p>error and exception scenarios</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their <strong>architectural relevance</strong>. It is <strong>not</strong> important to describe a large number of scenarios. You should rather document a representative selection.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>You should understand how (instances of) building blocks of your system perform their job and communicate at runtime.
+You will mainly capture scenarios in your documentation to communicate your architecture to stakeholders that are less willing or able to read and understand the static models (building block view, deployment view).</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>There are many notations for describing scenarios, e.g.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>numbered list of steps (in natural language)</p>
+</li>
+<li>
+<p>activity diagrams or flow charts</p>
+</li>
+<li>
+<p>sequence diagrams</p>
+</li>
+<li>
+<p>BPMN or EPCs (event process chains)</p>
+</li>
+<li>
+<p>state machines</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-6/">Runtime View</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_login_scenario">6.1. Login scenario</h3>
+<div class="paragraph">
+<p>When the user wants to login into the application (KaW), the user navigates to the login page.
+The WebApp will show a form that allows the user to enter their details (username and password),
+which are then sent to the User Service by means of the Gateway in order to be verified.</p>
+</div>
+<div class="paragraph">
+<p>Then, the User Service asks the Database for the password given the username. The Database
+will return an encrypted password. The User Service will encrypt the password provided by
+the user and then compare it with the one from the database. If the passwords do not match,
+an error message showing "Invalid credentials" will appear to the user, and if they are
+correct, a valid JSON response is created together with the creation of a session token that
+allows the user to stay authenticated for a period of time. Finally the user will be able to access the application.</p>
+</div>
+<div class="paragraph">
+<p>This case scenario is also represented on the following diagram (split in two for better readability):</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-cbf414214f537f5bf7eecf42055d334d.png" alt="Diagram" width="784" height="454">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-275bb226c138498d4814f923d1680eec.png" alt="Diagram" width="784" height="444">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_question_generation">6.2. Question Generation</h3>
+<div class="paragraph">
+<p>When a user starts a game through the WebApp, it triggers a request for generating questions to
+the Gateway. The Gateway works with the QS (Question Service) to generate questions. To improve
+performance a simple cache system is implemented.</p>
+</div>
+<div class="paragraph">
+<p>First, half of questions to generate are actually generated using Wikidata Service: QS requests a
+question template from the Database, which is then filled with relevant data from the
+WQS (Wikidata Query Service). After filling the template, QS uses the previous data, obtained
+from WQS, to also generate answers and distractors. If WQS gets timed out (e.g. waiting more
+than 5 sec to retrieve the data to fill template), it is chosen an already generated question from
+cache to always try to return the exact number of questions requested.</p>
+</div>
+<div class="paragraph">
+<p>Second, the other half are simply retrieved from previously wikidata generated questions which are
+stored in DB. Then, both array of questions are combined to return the n questions requested.</p>
+</div>
+<div class="paragraph">
+<p>Optionally, if questions are required in a certain language. The QS queries a translation Service
+(TS) to perform the translation. For that, the whole array of questions is transformed into a
+suitable string format to avoid constraints by TS (e.g. translating question by question and answer
+by answer). Then, TS is used and translates the string. Once this is done, QS is in charge of
+reformatting the translated string into questions array.</p>
+</div>
+<div class="paragraph">
+<p>Finally, QS sends them back to the Gateway, so again the response can then be redirected
+towards the WebApp. Finally, the WebApp displays the questions of the game.</p>
+</div>
+<div class="paragraph">
+<p>This case scenario is also represented with the following diagrams (split for better understanding).</p>
+</div>
+<div class="paragraph">
+<p>Overview of Question Generation workflow:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-b79f0639d5807d5bf23436a886c8ed2a.png" alt="Diagram" width="784" height="612">
+</div>
+</div>
+<div class="paragraph">
+<p>The Question Generation phase consists of:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-ed1cd6a98ec20b31ab2da87eb389a21c.png" alt="Diagram" width="707" height="662">
+</div>
+</div>
+<div class="paragraph">
+<p>The caching retrieval phase:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-859e443d6b27e2b40a528da509381f37.png" alt="Diagram" width="450" height="332">
+</div>
+</div>
+<div class="paragraph">
+<p>If a language has been selected, the translation phase will be as follows:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-9d88c20c1b7d085430f41fedf201269b.png" alt="Diagram" width="600" height="500">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_statistics_recording_scenario">6.3. User statistics recording scenario</h3>
+<div class="paragraph">
+<p>When a user answers the final question, the WebApp determines if the answer was correct or not. Then,
+all the data collected from the current game (the WebApp is collecting infromation while playing) is
+sent to the Gateway and then forwarded to the User Service, which is in charge of
+updating the Database with the updated user history.</p>
+</div>
+<div class="paragraph">
+<p>This case scenario is also represented on the following diagram:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-1eb2cf02f0d9d50fe61d4477fe922e09.png" alt="Diagram" width="784" height="370">
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-deployment-view">7. Deployment View</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Content</div>
+<p>The deployment view describes:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and</p>
+</li>
+<li>
+<p>mapping of (software) building blocks to that infrastructure elements.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Often systems are executed in different environments, e.g. development environment, test environment, production environment. In such cases you should document all relevant environments.</p>
+</div>
+<div class="paragraph">
+<p>Especially document a deployment view if your software is executed as distributed system with more than one computer, processor, server or container or when you design and construct your own hardware processors and chips.</p>
+</div>
+<div class="paragraph">
+<p>From a software perspective it is sufficient to capture only those elements of an infrastructure that are needed to show a deployment of your building blocks. Hardware architects can go beyond that and describe an infrastructure to any level of detail they need to capture.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Software does not run without hardware.
+This underlying infrastructure can and will influence a system and/or some
+cross-cutting concepts. Therefore, there is a need to know the infrastructure.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Maybe a highest level deployment diagram is already contained in section 3.2. as
+technical context with your own infrastructure as ONE black box. In this section one can
+zoom into this black box using additional deployment diagrams:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>UML offers deployment diagrams to express that view. Use it, probably with nested diagrams,
+when your infrastructure is more complex.</p>
+</li>
+<li>
+<p>When your (hardware) stakeholders prefer other kinds of diagrams rather than a deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-7/">Deployment View</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Our project is configured using GitHub actions so that every release triggers
+unit and end-to-end tests, as well as an attempt to deploy the application to a server.
+This setup enables our team to achieve continuous deployment and delivery (CD) together with
+continuous integration (CI).</p>
+</div>
+<div class="paragraph">
+<p>Just for record, a guide followed by the team to deploy our application can be found
+<a href="https://github.com/Arquisoft/wiq_en3b/blob/master/docs/deploymentGuide.md">here</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_infrastructure_level_1">7.1. Infrastructure Level 1</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<p>Describe (usually in a combination of diagrams, tables, and text):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>distribution of a system to multiple locations, environments, computers, processors, .., as well as physical connections between them</p>
+</li>
+<li>
+<p>important justifications or motivations for this deployment structure</p>
+</li>
+<li>
+<p>quality and/or performance features of this infrastructure</p>
+</li>
+<li>
+<p>mapping of software artifacts to elements of this infrastructure</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For multiple environments or alternative deployments please copy and adapt this section of arc42 for all relevant environments.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-23c679754c8b7a9c0637bb89f9bd296c.png" alt="Diagram" width="784" height="1027">
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Motivation</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>The diagram above illustrates the initial version of our architecture and the delineation among its components. Our approach adopts a straightforward client-server architecture, where the server interacts with Wikidata to retrieve questions. This division enforces a clear separation between the client/frontend and the server/backend. Such separation benefits the entire system by ensuring that as long as the common API is implemented, the specific implementations can remain interchangeable.</p>
+</li>
+<li>
+<p>Utilizing an Ubuntu server on Azure provides us with an isolated environment equipped with the essential configurations and installations necessary for running our services. By hosting our server on Azure, we can minimize costs associated with machine uptime while alleviating responsibilities such as security, availability, and maintenance.</p>
+</li>
+<li>
+<p>We use Docker as it is a containerization platform that allows us to package our application and its dependencies into a standardized unit for software development. This approach ensures that our application will run consistently on any environment, regardless of the machine’s configuration. We&#8217;ve opted for a microservices architecture using Docker containers instead of a monolithic setup. Docker allows us to isolate each service, tailoring resources efficiently and preventing conflicts between services. Services operate independently within their containers, promoting scalability and resilience. Each service has its Docker image, enabling flexibility in development and deployment. Currently, our project includes various services, such as web application, gateway, user authentication, and MongoDB server. This Docker-based approach streamlines deployment, management, and resource utilization while enhancing the overall flexibility and scalability of our system.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Quality and/or Performance Features</dt>
+<dd>
+<p>As mentioned earlier, the primary advantage of this architecture lies in the interchangeability of its components.</p>
+</dd>
+<dt class="hdlist1">Mapping of Building Blocks to Infrastructure</dt>
+<dd>
+<p>The Web App, gateway, and services are all contained within Docker containers, which are hosted on a server. The server is responsible for hosting the Docker containers and communicating with Wikidata to retrieve questions. The gateway is responsible for interfacing with the web app and the services, while the services are responsible for managing the user’s data and generating questions.</p>
+</dd>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 77.7778%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Blocks</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Web App</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User interface to interact with the rest of the application.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gateway</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface that communicates the web app with the different services.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auth Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service for the authentication of the users.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service in charge of managing the users and its history. Some functions can be found for our API consumers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Users Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database to save the user’s data as well as the history of the games.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QuestionService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service that generates questions with WikiData. The same function can be found for our API consumers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Question Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database to save the templates and queries for WikiData.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WikiData</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The API used to get information from WikiData.</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-concepts">8. Cross-cutting Concepts</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Content</div>
+<p>This section describes overall, principal regulations and solution ideas that are relevant in multiple parts (= cross-cutting) of your system.
+Such concepts are often related to multiple building blocks.
+They can include many different topics, such as</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>models, especially domain models</p>
+</li>
+<li>
+<p>architecture or design patterns</p>
+</li>
+<li>
+<p>rules for using specific technology</p>
+</li>
+<li>
+<p>principal, often technical decisions of an overarching (= cross-cutting) nature</p>
+</li>
+<li>
+<p>implementation rules</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Concepts form the basis for <em>conceptual integrity</em> (consistency, homogeneity) of the architecture.
+Thus, they are an important contribution to achieve inner qualities of your system.</p>
+</div>
+<div class="paragraph">
+<p>Some of these concepts cannot be assigned to individual building blocks, e.g. security or safety.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>The form can be varied:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>concept papers with any kind of structure</p>
+</li>
+<li>
+<p>cross-cutting model excerpts or scenarios using notations of the architecture views</p>
+</li>
+<li>
+<p>sample implementations, especially for technical concepts</p>
+</li>
+<li>
+<p>reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Structure</div>
+<p>A potential (but not mandatory) structure for this section could be:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Domain concepts</p>
+</li>
+<li>
+<p>User Experience concepts (UX)</p>
+</li>
+<li>
+<p>Safety and security concepts</p>
+</li>
+<li>
+<p>Architecture and design patterns</p>
+</li>
+<li>
+<p>"Under-the-hood"</p>
+</li>
+<li>
+<p>development concepts</p>
+</li>
+<li>
+<p>operational concepts</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note: it might be difficult to assign individual concepts to one specific topic
+on this list.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/08-Crosscutting-Concepts-Structure-EN.png" alt="Possible topics for crosscutting concepts">
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-8/">Concepts</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_experience_ux">8.1. User Experience (UX)</h3>
+<div class="sect3">
+<h4 id="_internationalization">8.1.1. Internationalization</h4>
+<div class="paragraph">
+<p>One of the things to increase accessibility is giving our application the
+capability of being in various languages so people around the world can play
+our game. Obviously, internationalization is more than just changing the
+language of the Application but due to time constraints we will just offer
+Spanish, English, Ukrainian and French languages ( although, our API can generate questions
+in other languages different from described, to see the whole list, refer to
+our <a href="https://kawgame.xyz:8000/api-doc">API documentation</a> ).</p>
+</div>
+<div class="paragraph">
+<p>The library used for language translation in our KaW game is called
+<a href="https://react.i18next.com/"><strong>react-i18next</strong></a>.
+For simplicity (and due to just only having three languages), all of the translations
+of messages are stored locally in properties files. Eventually, if the Application
+grows and we wanted to  have more than 4 languages the best approach is to
+store those properties in a server and let the application to request
+those on the fly. Again, for simplicity the option of having all bundle
+together in the Frontend just fits.</p>
+</div>
+<div class="paragraph">
+<p>The translation of questions is a bit different from the frontend part since it
+is done "on the fly" by using the
+<a href="https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text">Microsoft translation API</a>
+. This change has been done since the questions are not fully known until they are generated
+so storing the translation locally does not provide any benefit. Also, one advantage of it, is its
+simplicity and ease to use. To meet the restrictions impose by the Free version of this API a series
+of formatting rules are carried out into the question generation phase to minimize the usage of it
+and avoid getting suspended.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_security">8.2. Security</h3>
+<div class="sect3">
+<h4 id="_bcrypt">8.2.1. Bcrypt</h4>
+<div class="paragraph">
+<p>Keeping a secure website for our users is one of our main quality
+goals. For that, all the passwords stored in MongoDB are simply
+hashes so attackers cannot decipher them easily. The library used
+in the AuthService and UserService to store or compare passwords
+is called <strong>bcrypt</strong>. This library provides with an easy way
+to hash passwords and keep user&#8217;s data secured.</p>
+</div>
+<div class="paragraph">
+<p>Also, all users are enforced to have a password with at least 8
+characters. This security measure makes a lot of sense if we
+want to really ensure the security of our users. Although
+sometimes it could be a bit cumbersome for some, the introduction
+of this measure make security to grow exponentially.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_authentication">8.2.2. Authentication</h4>
+<div class="paragraph">
+<p>To keep our users' data secure an authentication mechanism has
+been developed with the use of JSON Web Tokens (JWT). If someone
+tries to access historical game records for certain users, our
+KaW application enforces to pass a valid token through the header
+of the message request.</p>
+</div>
+<div class="paragraph">
+<p>In this way, only authenticated users are able to consult the
+different data that our application enforces.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_security_aspects">8.2.3. Other security aspects</h4>
+<div class="paragraph">
+<p>As stated in the quality goals, the security plays a crucial role
+in our application to prevent any attacks from external users or
+any potential backdoors that we could have in our code.</p>
+</div>
+<div class="paragraph">
+<p>For that, a Static Application Security Testing (known also as SAST) tool
+is included into our project. This tool scans the source code of our application
+for security weaknesses, potential vulnerabilities, and coding patterns that
+could lead to security breaches. One famous service that implements a SAST is
+SonarCloud, so the team has decided to use this tool in our CI and CD environment
+so each time a change is uploaded, the security scanner checks for any issue.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_development_concepts">8.3. Development concepts</h3>
+<div class="sect3">
+<h4 id="_test">8.3.1. Test</h4>
+<div class="paragraph">
+<p>Testing is one important feature when development comes to the table. To keep
+a good CI and CD environment a series of tests are enforced before submitting
+any new change into our main pipeline project. GithubActions help us to achieve
+this goal where different workflows have been built to ensure a project with
+the highest quality standards.</p>
+</div>
+<div class="paragraph">
+<p>There are many different types of tests and the team has decided to enforce the
+following ones:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Unitary Testing (included on CI/CD):</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each new code is tested independently to ensure its correct
+functionality and not breaking the main project. The testing framework used both
+for Backend and Frontend is <a href="https://jestjs.io/">Jest</a> due to its simplicity and its great bound with
+Javascript files.</p>
+</div>
+<div class="paragraph">
+<p>Also, the usage of SonarCloud gives us more than security checking,
+it also enforces each member of the team to have a good coverage on our code to meet
+the quality standards we are required.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>End-to-End Testing (included on CI/CD):</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Apart from testing functionality, all our code must also meet the required
+domain functionality such as registration, login, etc. For that, Jest is used
+in combination with <a href="https://pptr.dev/">puppeteer</a> which provides a High-level API
+to control browsers and simulate our different User Stories (domain functionality)
+that the project requires.</p>
+</div>
+<div class="paragraph">
+<p>The following functional requirements have been tested:</p>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>LOGIN-1: Registered user logs in successfully</p>
+</li>
+<li>
+<p>LOGIN-2: Registered user logs in with incorrect password</p>
+</li>
+<li>
+<p>PROFILEMGT-1: User updates profile information (profile picture and bio)</p>
+</li>
+<li>
+<p>REGISTER-1: The user is not registered in the site</p>
+</li>
+<li>
+<p>REGISTER-2: The user is already registered in the site</p>
+</li>
+<li>
+<p>GAME-1: The user wants to go to the game menu</p>
+</li>
+<li>
+<p>GAME-2: The user wants to start an easy game</p>
+</li>
+<li>
+<p>GAME-3: The user wants to start a medium game</p>
+</li>
+<li>
+<p>GAME-4: The user wants to start a hard game</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The combination of both Unitary and End-to-End tests gives our Application
+with enough robustness to meet the expectations of delivering high quality
+code.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Load Testing:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Although our application may not have a huge load of users, one of the quality
+goals is the performance of the application. With load testing, the team will be
+able to identify certain aspects or cases in which code takes too long to execute
+things. For example, having a lot of users playing the game and making a lot
+of requests to generate questions.</p>
+</div>
+<div class="paragraph">
+<p>For that, <a href="https://gatling.io/">Gatling</a> was chosen as our main load testing framework. Although, it is
+not written in Javascript which could facilitate the configuration, Gatling offers
+a light and simple framework to build these kind of tests. Also,the files
+generated by it are Java files which eases the tasks due to the vast knowledge of
+the team on this programming language.</p>
+</div>
+<div class="paragraph">
+<p>To see a real workload and how our application behaves to it, it has been carried two different
+tests per each case scenario. The first one could be consider a "considerable" amount of
+users where 20 users arrive to the application per second during 60 seconds. The second one
+is a type of load testing called Stress testing where the Application is put at its maximum
+capacity so it breaks. The following results are provided below:</p>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>LOGIN:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/LogInConsiderable/index.html">Considerable</a></p>
+</li>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/LogInStress/index.html">Stress</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>REGISTER:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/RegisterConsiderable/index.html">Considerable</a></p>
+</li>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/RegisterStress/index.html">Stress</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>PROFILECHANGES:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/PPConsiderable/index.html">Considerable</a></p>
+</li>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/PPStress/index.html">Stress</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>HARDGAME:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/HardGameConsiderable/index.html">Considerable</a></p>
+</li>
+<li>
+<p><a href="https://arquisoft.github.io/wiq_en3b/gatling/HardGameStress/index.html">Stress</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As it can be seen, the Application runs smoothly with 1200 concurrent users and it is
+more than enough to meet the quality requirements and taking in mind where the Application
+is hosted. On the other hand, it is currently impossible to achieve availiability and
+performance if 3000 users use our Application.</p>
+</div>
+<div class="paragraph">
+<p>If more information is needed on how to run those tests, please go
+<a href="https://github.com/Arquisoft/wiq_en3b/blob/master/webapp/GatlingLT/gettingOurHandsOn.md">here</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Usability testing</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Finally, another crucial part to be tested in our application are usability ones.
+With these test, the team tries to deliver high quality functionality to the
+users by simply testing with them and examine its behaviour.</p>
+</div>
+<div class="paragraph">
+<p>The team will select different people to try our application to get Information
+on how to improve it, at the end, this application is for them!</p>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>Home page:
+As stated by many users, they were a little bit lost when logging in directly into
+the application since they have to "guess" where the play button was (it was in navbar).
+For that, the team decided to include a direct play button that takes the user to the
+Game Page. Also, after checking with contrast tools, the name displayed on the Home
+Page was not readable enough, so it was also changed.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/HomePage_Old.png" alt="OldHomePage" width="640" height="480">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/HomePage_Change.png" alt="NewHomePage" width="640" height="480">
+</div>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>Game modes:
+Another thing the team noticed is the difficulty of users to select one game mode from
+our Game since they did not what did it mean "Easy", "Medium", &#8230;&#8203; So the team decided
+to put a descriptive text in each of the game modes so the user can truly understand
+what challengue is facing.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/Game_Old.png" alt="OldGamePage" width="640" height="480">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/Game_Change.png" alt="NewGamePage" width="640" height="480">
+</div>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>Password fields
+Some users have been very frustated when registering/logging into our Application
+since there was no "See password" button to correct their mistakes when typing. Since
+this is a simple yet powerful change to improve the User Experience, the team has decided
+to also support that capability.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/Password_Old.png" alt="OldPasswordPage" width="640" height="480">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/Password_Change.png" alt="NewPasswordPage" width="640" height="480">
+</div>
+</div>
+<div class="paragraph">
+<p>Usability testing does not ends here since it is needed a real one with lots of users
+of different ages and also, taking into account its timing on completing certain tasks.
+Although, taking already care of these details makes really the difference.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Accesibility, color checker and more</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Google&#8217;s automated tool LightHouse is used to perform several of "cross-cutting" tests to
+improve the performance and correctness of our web Application.</p>
+</div>
+<div class="paragraph">
+<p>It has been tested each page of our Application against this tool to see any flaw
+into our application, and, as it can be seen, our game has a very good mark on each one:
+<a href="https://arquisoft.github.io/wiq_en3b/lighthouse_results/lighthouse_game.html">GamePage</a>,
+<a href="https://arquisoft.github.io/wiq_en3b/lighthouse_results/lighthouse_home.html">HomePage</a>,
+<a href="https://arquisoft.github.io/wiq_en3b/lighthouse_results/lighthouse_leaderboard.html">LeaderboardPage</a>,
+<a href="https://arquisoft.github.io/wiq_en3b/lighthouse_results/lighthouse_login.html">LoginPage</a>,
+<a href="https://arquisoft.github.io/wiq_en3b/lighthouse_results/lighthouse_profile.html">ProfilePage</a>,
+<a href="https://arquisoft.github.io/wiq_en3b/lighthouse_results/lighthouse_register.html">RegisterPage</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/Lighthouse_Result.png" alt="Lighthouse_Result" width="640" height="480">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_code_generation">8.3.2. Code generation</h4>
+<div class="sect4">
+<h5 id="_jsend">JSend</h5>
+<div class="paragraph">
+<p>To have an standardized way of responses for the different Microservices that our
+application have, the JSend specification has been chosen. This specification allows
+the team to have uniform JSON responses so other parts of the system such as
+Frontend, always know what to expect from these services.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_architecture_and_design_patterns">8.4. Architecture and design patterns</h3>
+<div class="sect3">
+<h4 id="_microservices">8.4.1. MicroServices</h4>
+<div class="paragraph">
+<p>The reason behind, is that with Microservices architecture we can forget about dealing
+with a single complex application. Instead, we make a "Divide and Conquer" approach by
+identifying those modules that made up our system and making it independently deployable
+services, each serving a specific business function.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_gateway_and_rest">8.4.2. Gateway and REST</h4>
+<div class="paragraph">
+<p>This architectural pattern makes it easier for the Frontend subsystem to communicate
+with the different MicroServices that composes our Application since it has to focus
+on a single entry point instead of knowing which service to consult. It also help us
+to tackle the requirement of APIs by using this pattern since it acts like a REST API where
+other users (not our Application) can make petitions to it to retrieve some data using
+a uniform interface.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-995c5214ca788ef9fb6de14fa6a9096c.png" alt="Diagram" width="665" height="216">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_under_the_hood_concepts">8.5. "Under-the-hood" concepts</h3>
+<div class="sect3">
+<h4 id="_persistence">8.5.1. Persistence</h4>
+<div class="paragraph">
+<p>As stated in point 4.1, the chosen database for the project is MongoDB
+which offers us a document-oriented schema. This type of database fits
+perfectly with our services since the mainly work with JSON-formatted data.</p>
+</div>
+<div class="sect4">
+<h5 id="_er_model_questiondatabase">ER model - QuestionDatabase</h5>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-7e0a05f86a82dd3b1746098cd42875e5.png" alt="Diagram" width="432" height="377">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QUESTION_TEMPLATE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Holds the template needed to query the WikiData API for the Question generation. It
+has a relation with <strong>ONE QUESTION_TYPE</strong> document.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QUESTION_TYPE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Represents a category for a question (e.g. Capitals) together with its SPARQL query.
+Also, several entities are provided so prior to send SPARQL query into Wikidata Service, it
+can be selected one entity to change the whole query (e.g. Capitals of Europe or Capitals of Asia)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QUESTION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Holds document of already generated questions. This schema is used for performance enhancements
+(for a simple yet powerful cache)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_er_model_userdatabase">ER model - UserDatabase</h5>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-38b0e1a306a402fd0cee501f7a160844.png" alt="Diagram" width="385" height="356">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">USER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Holds all the data related to a user registered into our game. It
+has a relation with <strong>ONE USER_HISTORY</strong> and <strong>ONE USER_PROFILE</strong> document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">USER_HISTORY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Holds all the records/statistics of a single user through all played games.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">USER_PROFILE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Holds specific customization of the profile of a user.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_connection_to_mongodb">Connection to MongoDB</h5>
+<div class="paragraph">
+<p>To make it easier the connection from Services (using ExpressJS) to MongoDB, the
+usage of <strong>Mongoose</strong> has been chosen. This is a JS library that help us to create these
+connections.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-f1c7a04257c186c9bd14a39499059216.png" alt="Diagram" width="592" height="419">
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_session_handling">8.5.2. Session handling</h4>
+<div class="paragraph">
+<p>To handle the different sessions of our different users, JWT are also used
+for this purpose. For each logged in user, a token will be generated for
+authenticating them as stated previously, and also, for maintaining a session
+and hold the necessary information without having to reenter the users' credentials.
+In this way, the user will have to keep on its browser this token to maintain
+alive the session.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_operation_concepts">8.6. Operation concepts</h3>
+<div class="sect3">
+<h4 id="_monitoring_with_grafana_prometheus">8.6.1. Monitoring with Grafana &amp; Prometheus</h4>
+<div class="paragraph">
+<p>To provide with quality to the Application, a monitoring system has been applied using
+Grafana and Prometheus,to always keep track of how the application is performing. The
+work is simple, it has been added Prometheus to "scrap" information from the Gateway Service
+like all the petitions it is asked to it.</p>
+</div>
+<div class="paragraph">
+<p>This information is available at kawgame.xyz:8000/metrics and the Prometheus application,
+that manages it, at kawgame.xyz:9091. Although, this is retrieval is good, for the "humans"
+is not so comfortable to the "eye". For that, Grafana has been set up.</p>
+</div>
+<div class="paragraph">
+<p>This application help us to see in a graphical way all the load that our Application is
+having and how it responds to it. As this is "developers" information, a login has been set
+up to prevent other people from knowing this information.</p>
+</div>
+<div class="paragraph">
+<p>In that way, we would have the following:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-fd5fe2ec0b7447df473b371da7b5a033.png" alt="Diagram" width="784" height="363">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_persisting_the_persistence">8.6.2. Persisting the Persistence</h4>
+<div class="paragraph">
+<p>As requested by our shareholders, the application needed to keep all data from previous
+deployments. For that, the team has decided to have a simple yet powerful solution with
+the usage of Volumes of Docker.</p>
+</div>
+<div class="paragraph">
+<p>With this approach, each container from the Infrastructure shown before has its own data
+stored in those Volumes and it is also independent from it, so any new release will use
+the previous data and "persist the persistence".</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-design-decisions">9. Architecture Decisions</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>Important, expensive, large scale or risky architecture decisions including rationales.
+With "decisions" we mean selecting one alternative based on given criteria.</p>
+</div>
+<div class="paragraph">
+<p>Please use your judgement to decide whether an architectural decision should be documented
+here in this central section or whether you better document it locally
+(e.g. within the white box template of one building block).</p>
+</div>
+<div class="paragraph">
+<p>Avoid redundancy.
+Refer to section 4, where you already captured the most important decisions of your architecture.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Stakeholders of your system should be able to comprehend and retrace your decisions.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Various options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ADR (<a href="https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions">Documenting Architecture Decisions</a>) for every important decision</p>
+</li>
+<li>
+<p>List or table, ordered by importance and consequences or:</p>
+</li>
+<li>
+<p>more detailed in form of separate sections per decision</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-9/">Architecture Decisions</a> in the arc42 documentation.
+There you will find links and examples about ADR.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_microservices_and_gateway">9.1. Using microservices and gateway</h3>
+<div class="paragraph">
+<div class="title">Alternatives considered</div>
+<p>One possible alternative to microservices could be monolithic architecture for simplicity but potential scalability
+and maintenance challenges. We didn&#8217;t choose this approach because we think that the code would become unmaintainable
+quite fast. Also, the alternative to the gateway would be to have direct connections between the client and the services.</p>
+</div>
+<div class="paragraph">
+<div class="title">Goals of this decision</div>
+<p>We have chosen the microservice architecture mainly for it&#8217;s better maintainability since the different microservices
+are isolated. They also have more flexibility and scalability. The gateway allows us to handle errors more easily and
+it also allows clients to use the API as a whole.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creating_a_restful_api">9.2. Creating a RESTful API</h3>
+<div class="paragraph">
+<div class="title">Alternatives considered</div>
+<p>An alternative could be SOAP (Simple Object Access Protocol), which offers features like built-in security and reliability
+but tends to be more heavyweight and less scalable compared to REST.</p>
+</div>
+<div class="paragraph">
+<div class="title">Goals of this decision</div>
+<p>Our main reason for choosing REST is for simplicity, since they are easier to develop.
+Using RESTful principles promotes a uniform interface, making it easier to understand and consume the API.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_nosql">9.3. Using NoSQL</h3>
+<div class="paragraph">
+<div class="title">Alternatives considered</div>
+<p>An alternative could be traditional SQL databases like MySQL or PostgreSQL, which offer strong ACID compliance and are
+well-suited for structured data with complex relationships. We didn&#8217;t choose SQL because we are not dealing with complex
+relationships between entities.</p>
+</div>
+<div class="paragraph">
+<div class="title">Goals of this decision</div>
+<p>We chose MongoDB mainly for it&#8217;s great flexibility, since it allows handling unstructured data. That also makes it simpler
+to use.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_authentication">9.4. User authentication</h3>
+<div class="paragraph">
+<div class="title">Alternatives considered</div>
+<p>Authentication with Google was initially considered to leverage its OAuth 2.0 authentication mechanism for user
+authentication and authorization, this would improve security. However, it was ultimately not implemented due to several
+requirements imposed by Google in order to apply and be able to use it.</p>
+</div>
+<div class="paragraph">
+<div class="title">Goals of this decision</div>
+<p>In the end we are using just a token system for it&#8217;s simplicity and because we couldn&#8217;t include OAuth 2.0.</p>
+</div>
+<div class="paragraph">
+<p>Some of these decisions are also documented in our <a href="https://github.com/Arquisoft/wiq_en3b/wiki">Wiki</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-quality-scenarios">10. Quality Requirements</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Content</div>
+<p>This section contains all quality requirements as quality tree with scenarios. The most important ones have already been described in section 1.2. (quality goals)</p>
+</div>
+<div class="paragraph">
+<p>Here you can also capture quality requirements with lesser priority,
+which will not create high risks when they are not fully achieved.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Since quality requirements will have a lot of influence on architectural
+decisions you should know for every stakeholder what is really important to them,
+concrete and measurable.</p>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-10/">Quality Requirements</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quality_tree">10.1. Quality Tree</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Content</div>
+<p>The quality tree (as defined in ATAM – Architecture Tradeoff Analysis Method) with quality/evaluation scenarios as leafs.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>The tree structure with priorities provides an overview for a sometimes large number of quality requirements.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>The quality tree is a high-level overview of the quality goals and requirements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tree-like refinement of the term "quality". Use "quality" or "usefulness" as a root</p>
+</li>
+<li>
+<p>a mind map with quality categories as main branches</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In any case the tree should include links to the scenarios of the following section.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/diag-mermaid-md5-70dcd42e51832cb9d5d5b906ef3b7407.png" alt="Diagram" width="784" height="98">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quality_scenarios">10.2. Quality Scenarios</h3>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>Concretization of (sometimes vague or implicit) quality requirements using (quality) scenarios.</p>
+</div>
+<div class="paragraph">
+<p>These scenarios describe what should happen when a stimulus arrives at the system.</p>
+</div>
+<div class="paragraph">
+<p>For architects, two kinds of scenarios are important:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Usage scenarios (also called application scenarios or use case scenarios) describe the system’s runtime reaction to a certain stimulus. This also includes scenarios that describe the system’s efficiency or performance. Example: The system reacts to a user’s request within one second.</p>
+</li>
+<li>
+<p>Change scenarios describe a modification of the system or of its immediate environment. Example: Additional functionality is implemented or requirements for a quality attribute change.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>Scenarios make quality requirements concrete and allow to
+more easily measure or decide whether they are fulfilled.</p>
+</div>
+<div class="paragraph">
+<p>Especially when you want to assess your architecture using methods like
+ATAM you need to describe your quality goals (from section 1.2)
+more precisely down to a level of scenarios that can be discussed and evaluated.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>Tabular or free form text.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_usage_scenarios">10.2.1. Usage Scenarios</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quality requirement</th>
+<th class="tableblock halign-left valign-top">Scenario</th>
+<th class="tableblock halign-left valign-top">Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Usability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When new users access the application the design should be intuitive enough, allowing them to navigate through the system and play the game easily.
+The application should meet usability standards.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adaptability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If a user accesses the application from a different device than a PC, the application should be able to adapt to the different screen size, providing a satisfactory user experience.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Performance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When a user interacts with the system it should react within one second to ensure a smooth and responsive user experience.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accessibility</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In case a user with a visual impairment interacts with the web application, it should follow HTML standards to ensure accessibility.
+All interactive elements must be navigable using screen readers, text alternatives should be provided for non-text content.
+Additionally, the application&#8217;s color contrast should be enough for people with color blindness.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privacy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If a user provides personal information during the registration, the application should securely handle and store user-provided personal information.
+Encryption should be applied for data storage.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Medium</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If a malicious user attempts unauthorized access to the application, the application should implement robust authentication mechanisms,
+including secure password storage to prevent unauthorized access.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Medium</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Availability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Users should be able to access the application at any time, with an availability of about 95%.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Medium</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_change_scenarios">10.2.2. Change Scenarios</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quality requirement</th>
+<th class="tableblock halign-left valign-top">Scenario</th>
+<th class="tableblock halign-left valign-top">Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maintainability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When new functionalities need to be added to the application, they should be easy to integrate.
+The application should have a good architecture and design that makes the code more modular, allowing easier maintenance.
+The documentation should also be clear for potential new team members.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Usability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New usability improvements should be implemented based on user feedback and usability testing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Different components of the application should be updated frequently to protect against evolving threats and vulnerabilities.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Testability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When new features are added to the application, new tests should be performed and they should be easy to add.
+The application must be designed to facilitate testing across new scenarios.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-technical-risks">11. Risks and Technical Debts</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>A list of identified technical risks or technical debts, ordered by priority</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>“Risk management is project management for grown-ups” (Tim Lister, Atlantic Systems Guild.)</p>
+</div>
+<div class="paragraph">
+<p>This should be your motto for systematic detection and evaluation of risks and technical debts in the architecture, which will be needed by management stakeholders (e.g. project managers, product owners) as part of the overall risk analysis and measurement planning.</p>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>List of risks and/or technical debts, probably including suggested measures to minimize, mitigate or avoid risks or reduce technical debts.</p>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-11/">Risks and Technical Debt</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Identifying potential risks helps mitigate the challenges that the project could have. That&#8217;s
+why this analysis is crucial for the project&#8217;s success. Other benefits of this recognition
+are the enhancement of project efficiency, reduce rework, and ensure a good software product
+for our stakeholders and users.</p>
+</div>
+<div class="sect2">
+<h3 id="_technical_risks">11.1. Technical risks</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Risk</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WikiData Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relying on this external API can cause the QuestionService to stop working and produce our WebApp to not even be playable.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Introduce a sort of Cache for questions. When questions are generated from this API, try to store them for later usage or even to improve performance.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microsoft Translation Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Same issue as Wikidata, the failure on this API or the suspension from this API to our Application can make our questions to never be translated, although in the frontend there is a way of changing the language display.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The team has read all restrictions of its Free tier and made "tricks" to minimize the impact of failure such as transforming question arrays into a single string
+to avoid the rate limit (1000 requests/hr)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inexperience</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The little knowledge about new technologies used in the project like React, Express or Docker; can cause a failure in the implementation of it.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Research and constant learning through development can lead to better understanding of the technologies.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_business_risks">11.2. Business risks</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Risk</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Response times</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Having to wait for API responses can cause serious Bottlenecks on the WebApp. Users would have to wait a long time for each game they want to play.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The usage of asynchronous calls can be very beneficial for this risk to be mitigated.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deadlines</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time constraints tied to the constant delivery of features can lead to not ending with the required project features.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Team must organize itself well to meet all requirements. Also, continuous team meetings will be carried out to keep in touch with each team member work.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_technical_debts">11.3. Technical debts</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Debt</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The decision of using this platform is fully based on the team&#8217;s knowledge. Although, it could not be the best option/approach since other platforms such as AWS or hosting ones can have other benefits.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Game Logic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The decision of having our game logic like controlling the points, time played by player, etc; in
+the Frontend part may seem a good option when trying to develop a game quickly. Although, it is possible
+to add to a single user more points than it should be through programs like POSTMAN, so a backend game
+logic could tackle this issue.</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-glossary">12. Glossary</h2>
+<div class="sectionbody">
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="paragraph">
+<div class="title">Contents</div>
+<p>The most important domain and technical terms that your stakeholders use when discussing the system.</p>
+</div>
+<div class="paragraph">
+<p>You can also see the glossary as source for translations if you work in multi-language teams.</p>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>You should clearly define your terms, so that all stakeholders</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>have an identical understanding of these terms</p>
+</li>
+<li>
+<p>do not use synonyms and homonyms</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Form</div>
+<p>A table with columns &lt;Term&gt; and &lt;Definition&gt;.</p>
+</div>
+<div class="paragraph">
+<p>Potentially more columns in case you need translations.</p>
+</div>
+<div class="paragraph">
+<div class="title">Further Information</div>
+<p>See <a href="https://docs.arc42.org/section-12/">Glossary</a> in the arc42 documentation.</p>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Term</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Know and Win (KAW)</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>The name of our project.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>RTVE</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Radiotelevisión Española, the Spanish public television broadcaster and one of our stakeholders.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>"Saber y Ganar"</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>A famous Spanish TV show involving answering questions to win prizes.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>WikiData</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>A structured database that provides data to various applications, used here for generating questions and answers.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>SPARQL</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>The standard query language and protocol for Linked Open Data on the web or for RDF triplestores. Used to query the Wikidata service for generation of questions.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>API Consumers</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Refers to all users that make use of our API to either generate data or consult it.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>http(s)</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Main communication mechanism used to interconnect the different parts in our system.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>JWT</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Secure authentication mechanisms used to protect user accounts.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Kanban</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>A project management method used to visualize workflow.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Gatling</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>A load testing tool used to simulate a great amount of users accessing and using our system.</em></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class="paragraph">
+<p><strong>About arc42</strong></p>
+</div>
+<div class="paragraph">
+<p>This documentation is based on arc42 template for documentation of software and
+system architecture. Template Version 8.2 EN, January 2023</p>
+</div>
+<div class="paragraph">
+<p>Created, maintained and &#169; by Dr. Peter Hruschka, Dr. Gernot Starke and contributors.
+See <a href="https://arc42.org" class="bare">https://arc42.org</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 8.2 EN<br>
+Last updated 2024-07-07 01:03:08 UTC
+</div>
+</div>
+</body>
+</html>
