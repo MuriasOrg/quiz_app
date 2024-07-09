@@ -1,18 +1,19 @@
 # 📎 Welcome to Know and Win Application 📎
 
 [![Deploy on release](https://github.com/Arquisoft/wiq_en3b/actions/workflows/release.yml/badge.svg)](https://github.com/Arquisoft/wiq_en3b/actions/workflows/release.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Arquisoft_wiq_en3b&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Arquisoft_wiq_en3b)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Arquisoft_wiq_en3b&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Arquisoft_wiq_en3b)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MuriasOrg_quiz_app&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MuriasOrg_quiz_app)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MuriasOrg_quiz_app&metric=coverage)](https://sonarcloud.io/summary/new_code?id=MuriasOrg_quiz_app)
 [![CodeScene Code Health](https://codescene.io/projects/52699/status-badges/code-health)](https://codescene.io/projects/52699)
 [![CodeScene System Mastery](https://codescene.io/projects/52699/status-badges/system-mastery)](https://codescene.io/projects/52699)
 
 This repo is part of the [Software Architecture course](http://arquisoft.github.io/) in [2023/2024 edition](https://arquisoft.github.io/course2324.html). It is basically
-a web game trying to emulate the famous spanish TV show [Saber y Ganar](https://www.youtube.com/watch?v=w0Q0i0fnfwM), a trivia like game where users answer 
-questions to win juicy prizes 🥇 
+a web game trying to emulate the famous spanish TV show [Saber y Ganar](https://www.youtube.com/watch?v=w0Q0i0fnfwM), a trivia like game where users answer
+questions to win juicy prizes 🥇
 
 ![KaW](https://github.com/Arquisoft/wiq_en3b/assets/109146445/73f37c88-7ce7-4b3b-9cc9-982a5e3a8a34)
 
 ## 🚀 Test our app at 🚀
+
 https://kawgame.xyz
 
 And if it doesn't work, try the following...
@@ -65,7 +66,7 @@ After all the components are launched, the app should be available in localhost 
 If you want to deploy a server and display our work, you can follow this nice
 [markdown file](https://github.com/Arquisoft/wiq_en3b/blob/master/docs/deploymentGuide.md).
 
-But please, remember to tag us: "Application created by 
+But please, remember to tag us: "Application created by
 [Wiq_en3b Team](https://github.com/Arquisoft/wiq_en3b) :)"
 
 ## 👩‍💻 Contributors 🧑‍💻
