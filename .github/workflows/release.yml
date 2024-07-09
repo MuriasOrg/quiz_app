@@ -5,7 +5,6 @@ on:
     types: [published]
 
 jobs:
-    
   unit-tests:
     runs-on: ubuntu-latest
     steps:
@@ -134,7 +133,7 @@ jobs:
           registry: ghcr.io
           workdir: questionservice
           buildargs: TRANSLATION_API_KEY
-      
+
   docker-push-gatewayservice:
     name: Push gateway service Docker Image to GitHub Packages
     runs-on: ubuntu-latest
@@ -165,12 +164,19 @@ jobs:
           registry: ghcr.io
           workdir: gatewayservice
           buildargs: GATEWAY_URI,WEBAPP_URI
-  
+
   deploy:
     name: Deploy over SSH
     runs-on: ubuntu-latest
-    needs: [docker-push-userservice, docker-push-authservice, docker-push-questionservice, docker-push-gatewayservice,docker-push-webapp]
-    steps:      
+    needs:
+      [
+        docker-push-userservice,
+        docker-push-authservice,
+        docker-push-questionservice,
+        docker-push-gatewayservice,
+        docker-push-webapp,
+      ]
+    steps:
       - name: Deploy over SSH
         uses: fifsky/ssh-action@master
         with:
