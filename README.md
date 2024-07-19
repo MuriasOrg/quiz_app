@@ -38,7 +38,7 @@ suites you the best.
 The fastest way for launching this sample project is using docker. Just clone the project:
 
 ```sh
-git clone https://github.com/Arquisoft/wiq_en3b.git
+git clone https://github.com/MuriasOrg/quiz_app.git
 ```
 
 and launch it with docker compose:
