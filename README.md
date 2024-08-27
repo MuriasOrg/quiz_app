@@ -18,7 +18,7 @@ https://kawgame.xyz
 
 And if it doesn't work, try the following...
 
-https://172.187.153.13
+https://20.56.145.147
 
 ## 🛠 Test our API at 🛠
 
@@ -64,7 +64,7 @@ After all the components are launched, the app should be available in localhost 
 ## 🤖 Deployment guide 🤖
 
 If you want to deploy a server and display our work, you can follow this nice
-[markdown file](https://github.com/Arquisoft/wiq_en3b/blob/master/docs/deploymentGuide.md).
+[markdown file](https://github.com/MuriasOrg/quiz_app/blob/master/docs/deploymentGuide.md).
 
 But please, remember to tag us: "Application created by
 [Wiq_en3b Team](https://github.com/Arquisoft/wiq_en3b) :)"
