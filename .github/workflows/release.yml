@@ -184,10 +184,10 @@ jobs:
           user: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           command: |
-            rm -rf wiq_en3b
+            rm -rf quiz_app
             rm -rf gatewayservice
             git clone https://github.com/MuriasOrg/quiz_app.git
-            cp -r ./wiq_en3b/gatewayservice/ .
+            cp -r ./quiz_app/gatewayservice/ .
             echo -e "${{ secrets.CERTIFICATE }}" > gatewayservice/certificate/certificate.crt
             echo -e "${{ secrets.CERTIFICATE_KEY }}" > gatewayservice/certificate/certificatekey.key
             wget https://raw.githubusercontent.com/muriasorg/quiz_app/master/docker-compose.yml -O docker-compose.yml
