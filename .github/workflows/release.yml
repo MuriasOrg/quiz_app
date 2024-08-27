@@ -64,7 +64,7 @@ jobs:
         env:
           API_URI: https://kawgame.xyz:8000
         with:
-          name: arquisoft/wiq_en3b/webapp
+          name: muriasorg/quiz_app/webapp
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
@@ -85,7 +85,7 @@ jobs:
         env:
           JWT_KEY: ${{ secrets.JWT_KEY }}
         with:
-          name: arquisoft/wiq_en3b/authservice
+          name: muriasorg/quiz_app/authservice
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
@@ -106,7 +106,7 @@ jobs:
         env:
           JWT_KEY: ${{ secrets.JWT_KEY }}
         with:
-          name: arquisoft/wiq_en3b/userservice
+          name: muriasorg/quiz_app/userservice
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
@@ -127,7 +127,7 @@ jobs:
         env:
           TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
         with:
-          name: arquisoft/wiq_en3b/questionservice
+          name: muriasorg/quiz_app/questionservice
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
@@ -158,7 +158,7 @@ jobs:
           GATEWAY_URI: https://${{ secrets.DEPLOY_HOST }}:8000
           WEBAPP_URI: https://${{ secrets.DEPLOY_HOST }}:443
         with:
-          name: arquisoft/wiq_en3b/gatewayservice
+          name: muriasorg/quiz_app/gatewayservice
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
@@ -186,12 +186,12 @@ jobs:
           command: |
             rm -rf wiq_en3b
             rm -rf gatewayservice
-            git clone https://github.com/Arquisoft/wiq_en3b.git
+            git clone https://github.com/MuriasOrg/quiz_app.git
             cp -r ./wiq_en3b/gatewayservice/ .
             echo -e "${{ secrets.CERTIFICATE }}" > gatewayservice/certificate/certificate.crt
             echo -e "${{ secrets.CERTIFICATE_KEY }}" > gatewayservice/certificate/certificatekey.key
-            wget https://raw.githubusercontent.com/arquisoft/wiq_en3b/master/docker-compose.yml -O docker-compose.yml
-            wget https://raw.githubusercontent.com/arquisoft/wiq_en3b/master/.env
+            wget https://raw.githubusercontent.com/muriasorg/quiz_app/master/docker-compose.yml -O docker-compose.yml
+            wget https://raw.githubusercontent.com/muriasorg/quiz_app/master/.env
             docker compose --profile prod down
             docker compose --profile prod up -d --pull always
             docker exec grafana-defaultASW grafana-cli admin reset-admin-password ${{ secrets.GRAFANA_PASSWORD }}
