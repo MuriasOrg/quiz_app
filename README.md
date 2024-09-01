@@ -1,6 +1,6 @@
 # 📎 Welcome to Know and Win Application 📎
 
-[![Deploy on release](https://github.com/Arquisoft/wiq_en3b/actions/workflows/release.yml/badge.svg)](https://github.com/Arquisoft/wiq_en3b/actions/workflows/release.yml)
+[![Deploy on release](https://github.com/MuriasOrg/quiz_app/actions/workflows/release.yml/badge.svg)](https://github.com/MuriasOrg/quiz_app/actions/workflows/release.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MuriasOrg_quiz_app&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MuriasOrg_quiz_app)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MuriasOrg_quiz_app&metric=coverage)](https://sonarcloud.io/summary/new_code?id=MuriasOrg_quiz_app)
 [![CodeScene Code Health](https://codescene.io/projects/52699/status-badges/code-health)](https://codescene.io/projects/52699)
