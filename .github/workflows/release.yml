@@ -194,4 +194,4 @@ jobs:
             wget https://raw.githubusercontent.com/muriasorg/quiz_app/master/.env
             docker compose --profile prod down
             docker compose --profile prod up -d --pull always
-            docker exec grafana-defaultASW grafana-cli admin reset-admin-password ${{ secrets.GRAFANA_PASSWORD }}
+            docker exec grafana-${teamname:-defaultASW} grafana-cli admin reset-admin-password ${{ secrets.GRAFANA_PASSWORD }}
